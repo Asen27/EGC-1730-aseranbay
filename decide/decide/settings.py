@@ -68,7 +68,13 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
+BASEURL = 'https://git.heroku.com/egc-1730-aseranbay-app.git/'
+
+
+APIS = {}
+
+import django_heroku
+django_heroku.settings(locals())
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
